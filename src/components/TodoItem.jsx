@@ -1,6 +1,8 @@
 export const TodoItem = ({ todo, onClick }) => {
   return (
-    <li className="list-group-item list-group-item-light d-flex justify-content-between align-items-center">
+    <li 
+      key={todo.id}
+      className="list-group-item list-group-item-light d-flex justify-content-between align-items-center">
       <label className="form-check-label" htmlFor={`${todo.id}-done-checkbox`}>
         {todo.text}
       </label>
