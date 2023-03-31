@@ -2,9 +2,7 @@
 import React, { createContext } from 'react';
 import { useState } from 'react';
 import { appRouter } from '../Router';
-//import { ToDoProvider } from './ToDoProvider';
-//import useToDos from './useToDos';
-//import { appRouter } from '../Router';
+
 
 export const toDosContext = createContext( );
 
