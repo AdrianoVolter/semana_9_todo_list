@@ -1,4 +1,7 @@
-export const TodoItem = ({ todo, onClick }) => {
+export const TodoItem = ({ todo, onClick, }) => {
+
+  
+
   return (
     <li 
       key={todo.id}

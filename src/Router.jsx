@@ -12,13 +12,13 @@ import { createBrowserRouter } from "react-router-dom";
 import { App } from "./App";
 import { Home } from "./pages/Home";
 import { QuemSou } from "./pages/QuemSou";
-import ErroPage  from "./pages/Erro-page";
+//import ErroPage  from "./pages/Erro-page";
 
 export const appRouter = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <ErroPage />,
+   
     children: [
       //  as rotas serão incluídas aqui!
       {

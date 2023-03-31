@@ -1,6 +1,9 @@
-import { TodoItem } from "./TodoItem";
+import { TodoItem,  } from "./TodoItem";
 
 export const TodoList = ({ name, list, onClick }) => {
+
+  
+
   return (
     <section className="col p-2 m-2 border rounded-1">
       <h4>{name}</h4>
