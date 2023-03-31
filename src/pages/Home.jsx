@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { TodoList } from "../components/TodoList";
 import { Formulario } from "../components/Formulario";
-import { useToDos } from "../contexts/useToDos";
+import useToDos from "../contexts/useToDos";
 
 
 export const Home = () => {
