@@ -9,7 +9,11 @@ function useToDos( ) {
 
 
     const context = useContext(toDosContext);
-
+    if (!context) {
+        throw new Error('useToDos deve ser usado dentro de um ToDoProvider');
+    }else{
+        console.log('useToDos: ', context);
+    }
 
     return context;
 };
