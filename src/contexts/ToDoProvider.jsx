@@ -36,19 +36,19 @@ export function ToDoProvider({ children }) {
       const completedToDos = toDos.filter((todo) => todo.done);
       const pendingToDos = toDos.filter((todo) => !todo.done);
     
+      const value = {
+        appRouter,
+        markTodo,
+        addToDo,
+        completedToDos,
+        pendingToDos,
+        toDos,
+        setToDos,
+      };
       
     return (
 
-        <toDosContext.Provider value={ {
-            appRouter,
-            markTodo,
-            addToDo,
-            completedToDos,
-            pendingToDos,
-            toDos,
-            setToDos,
-
-             }} >
+        <toDosContext.Provider value={value} >
            
             {children}
         </toDosContext.Provider>
