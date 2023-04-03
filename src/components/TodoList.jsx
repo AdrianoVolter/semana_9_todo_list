@@ -1,7 +1,11 @@
 import { TodoItem,  } from "./TodoItem";
+//import useToDos from "../contexts/useToDos";
 
-export const TodoList = ({ name, list}) => {
+export const TodoList = ({ name, list }) => {
 
+  //const { markTodo } = useToDos(
+
+  
 
   return (
     <section className="col p-2 m-2 border rounded-1">
