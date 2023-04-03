@@ -1,6 +1,8 @@
+import useTodos from "../contexts/useTodos";
+
 export const TodoItem = ({ todo }) => {
 
-  
+  const { markTodo } = useTodos();
 
   return (
     <li 
@@ -10,7 +12,7 @@ export const TodoItem = ({ todo }) => {
         {todo.text}
       </label>
       <input
-        onChange={() => onClick(todo.id)}
+        onChange={() => markTodo(todo.id)}
         role="button"
         className="form-check-input me-1"
         type="checkbox"
