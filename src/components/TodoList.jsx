@@ -1,19 +1,18 @@
 import { TodoItem,  } from "./TodoItem";
-import useToDos from "../contexts/useToDos";
+import useTodos from "../contexts/useToDos";
 
-export const TodoList = ({ name, list }) => {
+export const TodoList = ({ name}) => {
 
-  //const { markTodo } = useToDos(
-
+  const { completedToDos, pendingToDos } = useTodos();
   
 
   return (
     <section className="col p-2 m-2 border rounded-1">
       <h4>{name}</h4>
       <ul className="list-group list-group-flush">
-        {list.map((todo) => (
-          <TodoItem todo={todo}/>
-        ))}
+      {name === "Finalizados"
+          ? completedToDos.map((todo) => <TodoItem todo={todo} />)
+          : pendingToDos.map((todo) => <TodoItem todo={todo} />)}
       </ul>
     </section>
   );

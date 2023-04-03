@@ -2,7 +2,7 @@ import { useRef } from "react";
 import  useTodos  from "../contexts/useToDos";
 
 export const Formulario = () => {
-  const { addToDo } = useToDo();
+  const { addToDo } = useTodos();
   const textElementRef = useRef();
 
   const handleSubmit = (event) => {

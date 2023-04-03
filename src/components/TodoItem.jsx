@@ -1,4 +1,4 @@
-import useTodos from "../contexts/useTodos";
+import useTodos from "../contexts/useToDos";
 
 export const TodoItem = ({ todo }) => {
 
