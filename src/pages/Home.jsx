@@ -3,7 +3,7 @@
 // import { Formulario } from "../components/Formulario";
 import { ToDoProvider } from "../contexts/ToDoProvider";
 
-export const Home = ({ }) => {
+export const Home = () => {
   
   return (
 
