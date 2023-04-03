@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export const Usuario = ({ nome, cargo, redes }) => {
   return (
     <div>
@@ -5,16 +6,18 @@ export const Usuario = ({ nome, cargo, redes }) => {
       <div className="d-flex">
         <span className="lead flex-grow-1">{cargo}</span>
         {redes.map((rede) => (
-          <a
+          <Link
             className="lead mx-1"
             role="button"
-            href={rede.link}
+            to={rede.link}
             target="_blank"
             rel="noreferrer"
           >
-            <i class={`bi ${rede.icone}`}></i>
-          </a>
+            <i className={`bi ${rede.icone}`}></i>
+          </Link>
+
         ))}
+
       </div>
     </div>
   );
