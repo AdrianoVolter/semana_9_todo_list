@@ -1,8 +1,6 @@
 //crie e exporte um contexto todoContext(use o createContext do React).
-import React, { createContext } from 'react';
-import { useState } from 'react';
-import { appRouter } from '../Router';
-
+import{ createContext,useState } from 'react';
+//import { appRouter } from '../Router';
 
 export const toDosContext = createContext( );
 
