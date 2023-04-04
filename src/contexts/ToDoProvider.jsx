@@ -34,6 +34,7 @@ export function ToDoProvider({ children }) {
       const completedToDos = toDos.filter((todo) => todo.done);
       const pendingToDos = toDos.filter((todo) => !todo.done);
     
+      // cria 
       const value = {
         appRouter,
         markTodo,

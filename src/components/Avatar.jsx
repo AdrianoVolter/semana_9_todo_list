@@ -1,17 +1,26 @@
-import React from "react";
+// import React from "react";
 //import { ReactDOM } from "react";
-export class Avatar extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
-  render() {
-    return (
+export function Avatar(props){
+
+   return (
       <img
-        src={this.props.src}
+        src={props.src}
         className="img-thumbnail"
-        alt={this.props.alt}
+        alt={props.alt}
       />
     );
-  }
+
 }
+
+
+
+// export class Avatar extends React.Component {
+//   constructor(props) {
+//     super(props);
+//   }
+
+//   render() {
+    
+//   }
+// }
