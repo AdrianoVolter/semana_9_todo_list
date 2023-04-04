@@ -11,9 +11,8 @@ function useToDos( ) { // criar um hooks
     const context = useContext(toDosContext); // contexto 
     if (!context) {
         throw new Error('useToDos deve ser usado dentro de um ToDoProvider');
-    }else{
-        console.log('useToDos: ', context);
     }
+        
 
     return context;
 };
